@@ -1,0 +1,137 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --background:#f4afbc;
+    --text:white;
+    --pink:#ffd1dc;
+    --bar:#FF69BA;
+    --rose:#ffe4e1;
+    --letter: #f7638a;
+    }
+body{
+    background-color: var(--background);
+    color: var(--text);
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 120px auto 0 auto;
+    max-width: 500px;
+}
+.start-container{
+    padding:30px ;
+    border-radius:20px ;
+    border:2px solid var(--pink);
+    display: flex;
+    gap:20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.info{
+    width: 100%;
+}
+#progressbar{
+    width: 100%;
+    height: 10px;
+    background-color: var(--pink);
+    border-radius:5px ;
+    margin-top: 20px;
+
+}
+#progress{
+    width:0;
+    height:10px ;
+    background-color:var(--bar) ;
+    border-radius:10px ;
+    transition: all 0.3s ease;
+}
+#number{
+    width: 100px;
+    height: 100px;
+    background-color: var(--pink);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+form{
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    gap:10px;
+}
+input{
+    padding:16px;
+    border: 1px solid var(--pink);
+    background: var(--rose);
+    flex:1;
+    border-radius: 10px;
+    color:var(--letter);
+    outline: none;
+}
+button{
+    width:50px ;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items:center;
+    justify-content:center ;
+    background-color:var(--pink) ;
+    color: var(--text);
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    border-color: var(--bar);
+
+}
+.taskitem{
+    display:flex;
+    background-color:var(--rose);
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+    width: 100%;
+    color: var(--letter);
+    align-items: center;
+    
+}
+.task{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.taskinput{
+    width: 20px;
+    height:20px;
+
+}
+#tasklist{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    list-style: none;
+}
+.icon {
+    display: flex;
+    gap: 10px;
+     cursor: pointer;
+}
+
+.icon img {
+    width: 35px;
+    height: 35px;
+   
+}
+.task.completed {
+    text-decoration: line-through;
+    color:var(--letter);
+}
